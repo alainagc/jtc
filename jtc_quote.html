@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 1
+    Case Problem 1
+    
+    Jedds Tree Care Request a Quote Page
+    Author: Alaina Cox
+    Date:   5/4/2020
+
+    Filename: jtc_quote.html
+   -->
+<meta charset="utf-8" />
+<title>Jedds Tree Care Quote</title>
+<link href="jtc_base.css" rel="stylesheet" />
+<link href="jtc_layout.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link href="jtc_styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="jtc">
+	<img src="jtc_logo.png" alt="Logo" />
+	<h1>Jedds Tree Care Request Quote</h1>
+</div>
+
+<header>
+
+    <nav>
+      <ul>
+        <li><a href="jtc_index.html">Home</a></li>
+        <li><a href="jtc_services.html">Services</a></li>
+		<li><a href="jtc_quote.html" class="current">Request a Quote</a></li>
+		<li><a href="jtc_contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<form id="requestQuote" action="mailto:alainagc81@gmail.com" method="post" enctype="multipart/form-data">
+	<fieldset id="contactInfo">
+		<legend>Your Contact Information</legend>
+		<div class="formRow">
+			<label for="name">Name*</label>
+			<input id="name" type="text" />
+		</div>
+		
+		<div class="formRow">
+			<label for="company">Company (optional)</label>
+			<input id="company" type="text" />
+		</div>
+		
+		<div class="formRow">
+			<label for="phone">Phone*</label>
+			<input id="phone" type="tel" />
+		</div>
+		
+		<div class="formRow">
+			<label for="email">Email*</label>
+			<input id="email" type="email" />
+		</div>
+		
+		<div class="formRow">
+			<label for="address">Address*</label>
+			<input id="address" type="text" />
+		</div>
+	</fieldset>
+	<fieldset id="requestDate">
+		<legend>Schedule a Day and Time</legend>
+		<div class="formRow">	
+			<label for="dateTime">Please enter a day and time when we are available, based on the calendar at the bottom of this page.</label>
+			<input id="dateTime" type="datetime-local" />
+		</div>
+	</fieldset>
+	<fieldset id="requestService">
+		<legend>Comments</legend>
+		<div class="formRow">
+			<label for="textBox">Please let us know what services you need or any other comments:</label>
+			<textarea id="textBox"></textarea>
+		</div>
+		<input type="submit" />
+	</fieldset>
+		
+</form>
+
+<table class="calendar">
+	<thead>
+		<tr>
+			<th></th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>8:00</th>
+			<td></td>
+			<td></td>
+			<td class="na" rowspan="2">Unavailable</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>9:00</th>
+			<td></td>
+			<td class="na" rowspan="5">Unavailable</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>10:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td class="na">Unavailable</td>
+		</tr>
+		<tr>
+			<th>11:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>12:00</th>
+			<td colspan="5" class="na">Lunch Break</td>
+		</tr>
+		<tr>
+			<th>1:00</th>
+			<td></td>
+			<td></td>
+			<td class="na" rowspan="4">Unavailable</td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>2:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>3:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>4:00</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
+
+</body>
+
+<footer>
+Jedds Tree Care &#9830; 201 Edward Ave. &#9830; Lansing, MI 48930
+</footer>
+
+</html>

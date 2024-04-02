@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<!--
+    New Perspectives on HTML5 and CSS3, 7th Edition
+    Tutorial 1
+    Case Problem 1
+    
+    Jedds Tree Care Home Page
+    Author: Alaina Cox
+    Date:   5/4/2020
+
+    Filename: jtc_index.html
+   -->
+<meta charset="utf-8" />
+<title>Jedds Tree Care Contact</title>
+<link href="jtc_base.css" rel="stylesheet" />
+<link href="jtc_layout.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+<link href="jtc_styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+<div class="jtc">
+	<img src="jtc_logo.png" alt="Logo" />
+	<h1>Jedds Tree Care Contact</h1>
+</div>
+
+<header>
+    <nav>
+      <ul>
+        <li><a href="jtc_index.html">Home</a></li>
+        <li><a href="jtc_services.html">Services</a></li>
+		<li><a href="jtc_quote.html">Request a Quote</a></li>
+		<li><a href="jtc_contact.html" class="current">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<form id="contact" action="mailto:#" method="post" enctype="multipart/form-data">
+	<fieldset>
+	<legend>We'd love to hear from you!</legend>
+	<a href="jtc_quote.html">To request a quote, please use this form.</a>
+	<div class="formRow">
+		<label for="name">Name</label>
+		<input id="name" type="text">
+	</div>
+	
+	<div class="formRow">
+		<label for="email">Email</label>
+		<input id="email" type="email">
+	</div>
+	
+	<div class="formRow">
+		<label for="comments">Comments:</label>
+		<textarea id="comments"></textarea>
+	</div>
+	<input type="submit" value="Send Email"/>
+	</fieldset>
+</form>
+
+</body>
+
+<footer>
+Jedds Tree Care &#9830; 201 Edward Ave. &#9830; Lansing, MI 48930
+</footer>
+
+</html>

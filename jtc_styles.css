@@ -1,0 +1,163 @@
+@charset "utf-8";
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Final Project
+   Alaina Cox
+   5/4/2020
+   
+   Filename: jtc_styles.css
+
+   This file contains updated styles used in the JTC website
+
+*/
+
+html {
+	background-color: #86d4f9;
+}
+
+/* Header Styles */
+/*
+body > header nav {
+	height: 35px;
+}
+*/
+
+body > header nav a {
+	font-family: Times New Roman, serif;
+	font-weight: bold;
+	font-size: 1.25em;
+	letter-spacing: normal;
+}
+
+body > header > nav ul li a {
+	letter-spacing: 0.1em;
+	line-height: 30px;
+}
+
+body > header > nav ul li a.current {       /* Make current page link yellow */
+	color: #ffff80;
+}
+
+/* div.jtc styles */
+
+div.jtc {
+	width: 100%;
+	background-color: #b5cc88;
+	padding-top: 20px;
+}
+
+div.jtc > * {
+	display: inline;
+	margin: 0px 20px;
+}
+
+div.jtc h1 {
+	font-family: 'Quicksand', sans-serif;
+	font-size: 3em;
+	line-height: 20px;
+}
+
+div.jtc img {
+	width: 180px;
+}
+
+/* Aside Styles */
+
+aside {
+	background-color: #92ad57;  /* changed from grey #a29d96 */
+	margin-top: 0px;
+}
+
+aside h1 {
+	width: 80%;
+	color: white;
+	margin: 10px auto 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+/* Body Styles */
+
+body > h2 {
+	color: #485926;
+}
+
+body > img {
+	margin-right: 0px;
+}
+
+/* Form Styles */
+
+div.formRow {  /* need this? */
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 8px 0px;
+}
+
+/*
+div.formRow > * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+*/
+
+/*
+form#requestQuote {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+*/
+
+form > fieldset {
+	background-color: #c7d5aa;
+	border: solid #738943 3px;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px 30px;
+}
+
+form legend {
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+form textarea {
+	height: 100px;
+	width: 90%;
+	margin-top: 10px;
+}
+
+form input {
+	margin-left: 8px;
+}
+
+/* Table styles */
+
+table {
+	width: 70%;
+	margin: 30px 15%;
+	border-radius: 10px;
+	border-style: hidden;
+	background-color: #c7d5aa;
+}
+
+th {
+	font-size: 1.2em;
+}
+
+tr {
+	height: 30px;
+}
+
+td {
+	border: 1px solid grey;
+}
+
+.na {
+	background-color: #a2b380;
+}
